@@ -1,0 +1,457 @@
+@import "../css/bulma/sass/utilities/initial-variables";
+@import "../css/bulma/sass/utilities/functions.sass";
+
+$pink: #ff9999;
+$pink-invert: #fff;
+$white: #fff;
+$white-invert: #ff9999;
+
+$primary: $white;
+$primary-invert: $white-invert;
+
+//image dimensions
+$dimensions: 16 24 32 48 64 128 256;
+
+//menu hover
+$menu-item-hover-background-color: transparent;
+$menu-item-hover-color: #ff6666;
+
+@import "../css/bulma/bulma";
+
+$breakpoint-mobile: 769px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.skills-content ul {
+    columns: 2;
+}
+
+//main title
+p.title {
+    font-size: $size-1;
+}
+
+//title of info sections
+h1.title {
+    color: $pink;
+}
+
+#main-arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 36px;
+    bottom: 2vh;
+    //margin-right: auto;
+    //width: 40%;
+    //transition: opacity s ease-in-out;
+}
+
+@include mobile {
+    .sidebar {
+        //height: 40%;
+        //position: absolute;
+        z-index:2;
+        width: 100%;
+        //margin-left: 12px;
+        text-align: center;
+        //visibility: hidden;
+        display: none;
+        background-color:  #ffe6e6;
+
+        position: fixed;
+        overflow: hidden;
+
+        left: 0;
+        right: 0;
+
+    }
+
+    #menu-btn {
+        display: inline-block;
+        //margin-left: 92%;
+        z-index: 3;
+
+        position: fixed;
+        overflow: hidden;
+    }
+
+    #greeting {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        //margin-left: 30%;
+    }
+
+    #greeting-img {
+      
+        margin-top: 10%;
+    }
+
+    /*
+    #main-arrow {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        //width: 32px;
+        //width: 50%;
+        //margin-left: 50%;
+    }*/
+
+    .contact-info {
+        //bottom: 20vh;
+        margin-top: 10%;
+    }
+
+    .contact-info li {
+        display: inline;
+        padding-right: 1rem;
+
+    }
+
+    .project-content {
+        position: relative;
+        height: 150px;
+    }
+
+    .tech {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+@include tablet {
+    .sidebar {
+        //height: 40%;
+        //position: absolute;
+        z-index:2;
+        width: 100%;
+        //margin-left: 12px;
+        text-align: center;
+        //visibility: hidden;
+        display: none;
+        background-color:  #ffe6e6;
+
+        position: fixed;
+        overflow: hidden;
+
+        left: 0;
+        right: 0;
+
+    }
+
+    #menu-btn {
+        display: inline-block;
+        //margin-left: 92%;
+        z-index: 3;
+
+        position: fixed;
+        overflow: hidden;
+    }
+
+    #greeting {
+        margin-left: 15%;
+    }
+
+    .contact-info {
+        //bottom: 20vh;
+        margin-top: 10%;
+    }
+
+    .contact-info li {
+        display: inline;
+        //margin-left: 1rem;
+        padding-right: 13%;
+
+    }
+
+    /*
+    #main-arrow {
+        margin-left: 50%;
+    }*/
+
+    .project-content {
+        position: relative;
+        height: 200px;
+    }
+
+    .tech {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+@include desktop {
+    .sidebar {
+        display: block;
+        position: sticky;
+        //display: inline-block;
+        max-height: 100vh;
+        overflow-y: auto;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        text-align: center;
+        background-color:  #ffe6e6;
+        
+    }
+
+    .menu-list {
+        margin-top: 15%;
+    }
+
+    #greeting {
+        margin-left: 10%;
+    }
+
+    #greeting-img {
+        //margin-left: 10%;
+    }
+
+
+    .contact-info {
+        //display: inline;
+        //position: static;
+        bottom: 40vh; 
+        //background-color:  #ffe6e6;
+    }
+
+    .contact-info li {
+        display: inline-block;
+        padding-right: 13%;
+        margin-top: 10px;
+        //margin-left: 1rem;
+    
+    }
+
+    /*
+    #main-arrow {
+        margin-left: 45%;
+    }*/
+
+    #menu-btn {
+        visibility: hidden;
+    }
+
+    .project-content {
+        position: relative;
+        height: 200px;
+    }
+
+    .tech {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+//desktop
+
+/*
+@media (min-width: $breakpoint-mobile){
+    .sidebar {
+        position: sticky;
+        //display: inline-block;
+        max-height: 100vh;
+        overflow-y: auto;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        text-align: center;
+        background-color:  #ffe6e6;
+        
+    }
+
+    .menu-list {
+        margin-top: 15%;
+    }
+
+
+    .contact-info {
+        //display: inline;
+        //position: static;
+        bottom: 40vh; 
+        //background-color:  #ffe6e6;
+    }
+
+    .contact-info li {
+        display: inline-block;
+        padding-right: 13%;
+        margin-top: 10px;
+        //margin-left: 1rem;
+    
+    }
+
+    #menu-btn {
+        visibility: hidden;
+    }
+
+    .project-content {
+        position: relative;
+        height: 200px;
+    }
+
+    .tech {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+*/
+
+/*
+@media (max-width: $breakpoint-mobile) {
+    //at mobile view
+
+    .sidebar {
+        //height: 40%;
+        //position: absolute;
+        z-index:2;
+        width: 100%;
+        margin-left: 12px;
+        text-align: center;
+        //visibility: hidden;
+        display: none;
+        background-color:  #ffe6e6;
+
+        position: fixed;
+        overflow: hidden;
+
+    }
+
+    .menu-list {
+        //margin-top: 50%;
+    }
+
+    .contact-info {
+        //bottom: 20vh;
+        margin-top: 10%;
+    }
+
+    .contact-info li {
+        display: inline;
+        margin-left: 1rem;
+
+    }
+    #menu-btn {
+        display: inline-block;
+        //margin-left: 92%;
+        z-index: 3;
+
+        position: fixed;
+        overflow: hidden;
+    }
+
+    #greeting {
+        margin-left: 30%;
+    }
+
+    #greeting-img {
+        margin-left: 25%;
+    }
+
+    .project-content {
+        position: relative;
+        height: 200px;
+    }
+
+    .tech {
+        position: absolute;
+        bottom: 0;
+    }
+
+ 
+}
+
+*/
+
+.skills-content {
+    margin-bottom: 5%;
+}
+
+.skills-list {
+    list-style-image: url("../images/code.svg");
+}
+
+//font content 
+.content {
+    font-size: 1.4rem;
+} 
+
+.my-books {
+    background-color: #fdefe8;
+}
+
+.pokengman {
+    background-color:  #e6e6ff;
+}
+
+.book-search {
+    background-color: #e6fff2;
+}
+
+.item-search {
+    background-color: #ffffe6;
+}
+
+.project {
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);   
+    .project-title {
+        color: #ff6666;
+    }
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.project-description {
+    color: #737373;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.project-links {
+    //background-color: #ff8080;
+    //background-color: $pink;
+    text-align: right;
+}
+
+.project-link {
+    padding: 5px;
+}
+
+.tech-listing {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    //border-radius: 20px;
+    //background: $pink;
+    //padding: 10px;
+    margin-left: 5px;
+    //margin-top: 5%;
+}
+
+.msg-btn {
+    color: $pink-invert;
+    background-color: #ff6666;
+}
+
+.msg-btn:hover {
+    color: #ff6666;
+    background-color: $pink-invert;
+}
