@@ -26,7 +26,7 @@ $('#menu-btn').click(function (e) {
 
 //close menu whenever it is clicked 
 $('.menu-item').click(function() {
-    if($(window).width() <= 1024){
+    if($(window).width() < 1009){
         $('.sidebar').hide();
         $('#menu-img').attr({
             'src':'images/menu_pink2.svg',
