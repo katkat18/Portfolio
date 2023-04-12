@@ -73,6 +73,13 @@ $('.clickables').mouseleave(function() {
     console.log(`hovering on: ${$(this).data('hover')}`);
     $(this).attr({
         'src': `images/${$(this).data('hover')}.svg`,
-        'alt': `${$(this).data('hoever')}`
+        'alt': `${$(this).data('hover')}`
+    });
+});
+
+$('clickables').click(function () {
+    $(this).attr({
+        'src': `images/${$(this).data('hover')}.svg`,
+        'alt': `${$(this).data('hover')}`
     });
 });
