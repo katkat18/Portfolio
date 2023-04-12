@@ -45,20 +45,13 @@ h1.title {
     width: 50%;
     height: 36px;
     bottom: 2vh;
-    //margin-right: auto;
-    //width: 40%;
-    //transition: opacity s ease-in-out;
 }
 
 @include mobile {
     .sidebar {
-        //height: 40%;
-        //position: absolute;
         z-index:2;
         width: 100%;
-        //margin-left: 12px;
         text-align: center;
-        //visibility: hidden;
         display: none;
         background-color:  #ffe6e6;
 
@@ -72,7 +65,6 @@ h1.title {
 
     #menu-btn {
         display: inline-block;
-        //margin-left: 92%;
         z-index: 3;
 
         position: fixed;
@@ -85,23 +77,12 @@ h1.title {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-        //margin-left: 30%;
     }
 
     #greeting-img {
       
         margin-top: 10%;
     }
-
-    /*
-    #main-arrow {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        //width: 32px;
-        //width: 50%;
-        //margin-left: 50%;
-    }*/
 
     .contact-info {
         //bottom: 20vh;
@@ -128,13 +109,9 @@ h1.title {
 
 @include tablet {
     .sidebar {
-        //height: 40%;
-        //position: absolute;
         z-index:2;
         width: 100%;
-        //margin-left: 12px;
         text-align: center;
-        //visibility: hidden;
         display: none;
         background-color:  #ffe6e6;
 
@@ -148,7 +125,6 @@ h1.title {
 
     #menu-btn {
         display: inline-block;
-        //margin-left: 92%;
         z-index: 3;
 
         position: fixed;
@@ -166,15 +142,9 @@ h1.title {
 
     .contact-info li {
         display: inline;
-        //margin-left: 1rem;
         padding-right: 13%;
 
     }
-
-    /*
-    #main-arrow {
-        margin-left: 50%;
-    }*/
 
     .project-content {
         position: relative;
@@ -192,7 +162,6 @@ h1.title {
     .sidebar {
         display: block;
         position: sticky;
-        //display: inline-block;
         max-height: 100vh;
         overflow-y: auto;
         top: 0;
@@ -212,30 +181,16 @@ h1.title {
         margin-left: 10%;
     }
 
-    #greeting-img {
-        //margin-left: 10%;
-    }
-
-
     .contact-info {
-        //display: inline;
-        //position: static;
         bottom: 40vh; 
-        //background-color:  #ffe6e6;
     }
 
     .contact-info li {
         display: inline-block;
         padding-right: 13%;
         margin-top: 10px;
-        //margin-left: 1rem;
-    
     }
 
-    /*
-    #main-arrow {
-        margin-left: 45%;
-    }*/
 
     #menu-btn {
         visibility: hidden;
@@ -252,127 +207,6 @@ h1.title {
     }
 
 }
-
-//desktop
-
-/*
-@media (min-width: $breakpoint-mobile){
-    .sidebar {
-        position: sticky;
-        //display: inline-block;
-        max-height: 100vh;
-        overflow-y: auto;
-        top: 0;
-        bottom: 0;
-        left:0;
-        right: 0;
-        text-align: center;
-        background-color:  #ffe6e6;
-        
-    }
-
-    .menu-list {
-        margin-top: 15%;
-    }
-
-
-    .contact-info {
-        //display: inline;
-        //position: static;
-        bottom: 40vh; 
-        //background-color:  #ffe6e6;
-    }
-
-    .contact-info li {
-        display: inline-block;
-        padding-right: 13%;
-        margin-top: 10px;
-        //margin-left: 1rem;
-    
-    }
-
-    #menu-btn {
-        visibility: hidden;
-    }
-
-    .project-content {
-        position: relative;
-        height: 200px;
-    }
-
-    .tech {
-        position: absolute;
-        bottom: 0;
-    }
-}
-
-*/
-
-/*
-@media (max-width: $breakpoint-mobile) {
-    //at mobile view
-
-    .sidebar {
-        //height: 40%;
-        //position: absolute;
-        z-index:2;
-        width: 100%;
-        margin-left: 12px;
-        text-align: center;
-        //visibility: hidden;
-        display: none;
-        background-color:  #ffe6e6;
-
-        position: fixed;
-        overflow: hidden;
-
-    }
-
-    .menu-list {
-        //margin-top: 50%;
-    }
-
-    .contact-info {
-        //bottom: 20vh;
-        margin-top: 10%;
-    }
-
-    .contact-info li {
-        display: inline;
-        margin-left: 1rem;
-
-    }
-    #menu-btn {
-        display: inline-block;
-        //margin-left: 92%;
-        z-index: 3;
-
-        position: fixed;
-        overflow: hidden;
-    }
-
-    #greeting {
-        margin-left: 30%;
-    }
-
-    #greeting-img {
-        margin-left: 25%;
-    }
-
-    .project-content {
-        position: relative;
-        height: 200px;
-    }
-
-    .tech {
-        position: absolute;
-        bottom: 0;
-    }
-
- 
-}
-
-*/
 
 .skills-content {
     margin-bottom: 5%;
@@ -426,8 +260,6 @@ h1.title {
 }
 
 .project-links {
-    //background-color: #ff8080;
-    //background-color: $pink;
     text-align: right;
 }
 
@@ -439,11 +271,7 @@ h1.title {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
-    //border-radius: 20px;
-    //background: $pink;
-    //padding: 10px;
     margin-left: 5px;
-    //margin-top: 5%;
 }
 
 .msg-btn {
