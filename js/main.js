@@ -76,3 +76,10 @@ $('.clickables').mouseleave(function() {
         'alt': `${$(this).data('hoever')}`
     });
 });
+
+$('.clickables').click(function () {
+    $(this).attr({
+        'src': `images/${$(this).data('hover')}.svg`,
+        'alt': `${$(this).data('hoever')}`
+    });
+});
